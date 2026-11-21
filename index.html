@@ -4,44 +4,52 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Time since I found this issue</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700&display=swap">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap">
 <style>
   :root {
-    --bg: #fcfcfc;
-    --fg: #1a1a1a;
-    --muted: #6b6b6b;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg: #111; --fg: #f2f2f2; --muted: #8a8a8a; }
+    --bg: #fffff8;        /* warm Tufte paper */
+    --fg: #111111;
+    --muted: #6b6456;     /* warm sand-brown */
+    --rule: #e7e0cf;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { height: 100%; }
   body {
     background: var(--bg);
     color: var(--fg);
-    font-family: "Fira Sans", -apple-system, system-ui, sans-serif;
-    font-weight: 300;
+    font-family: 'ET Book', 'Crimson Pro', Palatino, 'Palatino Linotype', Georgia, serif;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 24px;
-    gap: 1.25rem;
+    gap: 1.5rem;
+    -webkit-font-smoothing: antialiased;
   }
   h1 {
-    font-weight: 300;
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-style: italic;
+    font-size: clamp(1.1rem, 4vw, 1.7rem);
+    letter-spacing: 0.01em;
     color: var(--muted);
   }
   #counter {
-    font-weight: 700;
+    font-weight: 600;
     font-variant-numeric: tabular-nums;
-    font-size: clamp(2.25rem, 9vw, 5.5rem);
-    line-height: 1.1;
+    font-size: clamp(2.5rem, 11vw, 6.5rem);
+    line-height: 1.05;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
   }
-  #sub { color: var(--muted); font-size: 0.95rem; }
+  #sub {
+    color: var(--muted);
+    font-size: 1rem;
+    font-style: italic;
+  }
 </style>
 </head>
 <body>
